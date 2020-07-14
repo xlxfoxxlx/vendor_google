@@ -851,6 +851,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/vendor/lib/egl/libQTapGLES.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libQTapGLES.so \
     vendor/google/coral/proprietary/vendor/lib/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_adreno.so \
     vendor/google/coral/proprietary/vendor/lib/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_esx.so \
+    vendor/google/coral/proprietary/vendor/lib/hardware.google.light@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/hardware.google.light@1.0.so \
     vendor/google/coral/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/google/coral/proprietary/vendor/lib/hw/android.hardware.camera.provider@2.4-impl-google.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.camera.provider@2.4-impl-google.so \
     vendor/google/coral/proprietary/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
@@ -1302,6 +1303,8 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_adreno.so \
     vendor/google/coral/proprietary/vendor/lib64/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_esx.so \
     vendor/google/coral/proprietary/vendor/lib64/g3a.data.manager.vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/g3a.data.manager.vendor.so \
+    vendor/google/coral/proprietary/vendor/lib64/hardware.google.light@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hardware.google.light@1.0.so \
+    vendor/google/coral/proprietary/vendor/lib64/hardware.google.light@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hardware.google.light@1.1.so \
     vendor/google/coral/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/google/coral/proprietary/vendor/lib64/hw/android.hardware.camera.provider@2.4-impl-google.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.camera.provider@2.4-impl-google.so \
     vendor/google/coral/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
