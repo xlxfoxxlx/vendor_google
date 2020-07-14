@@ -18,9 +18,28 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/google/coral
 
 PRODUCT_COPY_FILES += \
+    vendor/google/coral/proprietary/bin/move_time_data.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/move_time_data.sh \
     vendor/google/coral/proprietary/lib/vendor.display.config@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.display.config@1.0.so \
+    vendor/google/coral/proprietary/lib/vendor.display.config@1.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.display.config@1.1.so \
+    vendor/google/coral/proprietary/lib/vendor.display.config@1.2.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.display.config@1.2.so \
+    vendor/google/coral/proprietary/lib/vendor.display.config@1.3.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.display.config@1.3.so \
+    vendor/google/coral/proprietary/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.display.postproc@1.0.so \
+    vendor/google/coral/proprietary/lib/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.hardware.alarm@1.0.so \
+    vendor/google/coral/proprietary/lib/vendor.qti.hardware.factory@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.hardware.factory@1.0.so \
+    vendor/google/coral/proprietary/lib/vendor.qti.hardware.iop@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.hardware.iop@1.0.so \
+    vendor/google/coral/proprietary/lib/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.hardware.iop@2.0.so \
+    vendor/google/coral/proprietary/lib/vendor.qti.hardware.seccam@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.hardware.seccam@1.0.so \
     vendor/google/coral/proprietary/lib/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/google/coral/proprietary/lib64/vendor.display.config@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.display.config@1.0.so \
+    vendor/google/coral/proprietary/lib64/vendor.display.config@1.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.display.config@1.1.so \
+    vendor/google/coral/proprietary/lib64/vendor.display.config@1.2.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.display.config@1.2.so \
+    vendor/google/coral/proprietary/lib64/vendor.display.config@1.3.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.display.config@1.3.so \
+    vendor/google/coral/proprietary/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.display.postproc@1.0.so \
+    vendor/google/coral/proprietary/lib64/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.alarm@1.0.so \
+    vendor/google/coral/proprietary/lib64/vendor.qti.hardware.factory@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.factory@1.0.so \
+    vendor/google/coral/proprietary/lib64/vendor.qti.hardware.iop@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.iop@1.0.so \
+    vendor/google/coral/proprietary/lib64/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.iop@2.0.so \
+    vendor/google/coral/proprietary/lib64/vendor.qti.hardware.seccam@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.seccam@1.0.so \
     vendor/google/coral/proprietary/lib64/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/google/coral/proprietary/product/etc/CarrierSettings/airtel_in.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/airtel_in.pb \
     vendor/google/coral/proprietary/product/etc/CarrierSettings/att5g_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/att5g_us.pb \
@@ -204,6 +223,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/product/lib64/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsdm-disp-apis.qti.so \
     vendor/google/coral/proprietary/product/lib64/libsecureui_svcsock_system.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsecureui_svcsock_system.so \
     vendor/google/coral/proprietary/product/lib64/libsecureuisvc_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsecureuisvc_jni.so \
+    vendor/google/coral/proprietary/product/lib64/libsketchology_native.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsketchology_native.so \
     vendor/google/coral/proprietary/product/lib64/vendor.google.wifi_ext@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.google.wifi_ext@1.0.so \
     vendor/google/coral/proprietary/product/lib64/vendor.google.wireless_charger@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.google.wireless_charger@1.0.so \
     vendor/google/coral/proprietary/product/lib64/vendor.qti.data.factory@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.data.factory@1.0.so \
@@ -277,6 +297,12 @@ PRODUCT_PACKAGES += \
     ims \
     obdm_stub \
     qcrilmsgtunnel \
+    com.qti.snapdragon.sdk.display \
+    vendor.qti.hardware.alarm-V1.0-java \
+    vendor.qti.hardware.data.latency-V1.0-java \
+    vendor.qti.hardware.factory-V1.0-java \
+    vendor.qti.ims.callinfo-V1.0-java \
+    vendor.qti.voiceprint-V1.0-java \
     QtiTelephonyServicelibrary \
     com.qualcomm.qti.imscmservice-V2.0-java \
     com.qualcomm.qti.imscmservice-V2.1-java \
@@ -851,7 +877,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/vendor/lib/egl/libQTapGLES.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libQTapGLES.so \
     vendor/google/coral/proprietary/vendor/lib/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_adreno.so \
     vendor/google/coral/proprietary/vendor/lib/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_esx.so \
-    vendor/google/coral/proprietary/vendor/lib/hardware.google.light@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/hardware.google.light@1.0.so \
     vendor/google/coral/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/google/coral/proprietary/vendor/lib/hw/android.hardware.camera.provider@2.4-impl-google.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.camera.provider@2.4-impl-google.so \
     vendor/google/coral/proprietary/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
@@ -1303,8 +1328,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_adreno.so \
     vendor/google/coral/proprietary/vendor/lib64/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_esx.so \
     vendor/google/coral/proprietary/vendor/lib64/g3a.data.manager.vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/g3a.data.manager.vendor.so \
-    vendor/google/coral/proprietary/vendor/lib64/hardware.google.light@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hardware.google.light@1.0.so \
-    vendor/google/coral/proprietary/vendor/lib64/hardware.google.light@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hardware.google.light@1.1.so \
     vendor/google/coral/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/google/coral/proprietary/vendor/lib64/hw/android.hardware.camera.provider@2.4-impl-google.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.camera.provider@2.4-impl-google.so \
     vendor/google/coral/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
